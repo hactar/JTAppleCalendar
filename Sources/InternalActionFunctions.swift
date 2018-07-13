@@ -292,7 +292,7 @@ extension JTAppleCalendarView {
     }
     
     // Only reload the dates if the datasource information has changed
-    func reloadDelegateDataSource() -> (shouldReload: Bool, configParameters: ConfigurationParameters?) {
+    public func reloadDelegateDataSource() -> (shouldReload: Bool, configParameters: ConfigurationParameters?) {
         var retval: (Bool, ConfigurationParameters?) = (false, nil)
         if let
             newDateBoundary = calendarDataSource?.configureCalendar(self) {
